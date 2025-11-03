@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis experiencias</title>
+    <link rel="stylesheet" href="/static/css/experiencias/experiencias.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+</head>
+
+<body>
+    <header id="headerId" class="cabecera fijar">
+        <h1 class="titulo">Wilfer Ortíz</h1>
+        <nav class="secciones">
+            <a href="/index.html" class="seccion">Inicio</a>
+            <a href="#educacion" class="seccion">Educacion</a>
+            <a href="/template/experiencias.html" class="seccion">Experiencias</a>
+            <a href="#herramientas" class="seccion">Herramientas</a>
+            <a href="#proyectos" class="seccion">Proyectos</a>
+            <a href="#contacto" class="seccion">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="mis-experiencias">
+            <h1>Mis Experiencias</h1>
+            <p>Un recorrido visual por las actividades y momentos más importantes durante mi formación en el instituto
+            </p>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline">
+            <!-- Experiencia 1 -->
+            <div class="timeline-item" onclick="openModal(1)">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Marzo 2024</span>
+                    <h3 class="timeline-title">Hackathon de Desarrollo Web</h3>
+                    <p class="timeline-description">
+                        Participé en mi primer hackathon donde desarrollamos una aplicación web en 24 horas. Fue una
+                        experiencia increíble trabajar en equipo bajo presión.
+                    </p>
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=400&fit=crop"
+                        alt="Hackathon" class="timeline-image">
+                    <span class="read-more">Ver más →</span>
+                </div>
+            </div>
+
+            <!-- Experiencia 2 -->
+            <div class="timeline-item" onclick="openModal(2)">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Mayo 2024</span>
+                    <h3 class="timeline-title">Taller de Inteligencia Artificial</h3>
+                    <p class="timeline-description">
+                        Asistimos a un taller intensivo sobre Machine Learning y sus aplicaciones prácticas. Aprendimos
+                        conceptos fundamentales y realizamos proyectos prácticos.
+                    </p>
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=400&fit=crop"
+                        alt="Taller IA" class="timeline-image">
+                    <span class="read-more">Ver más →</span>
+                </div>
+            </div>
+
+            <!-- Experiencia 3 -->
+            <div class="timeline-item" onclick="openModal(3)">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Julio 2024</span>
+                    <h3 class="timeline-title">Proyecto Final de Módulo</h3>
+                    <p class="timeline-description">
+                        Presentación del proyecto final del módulo de desarrollo backend. Creamos una API REST completa
+                        con autenticación y base de datos.
+                    </p>
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=400&fit=crop"
+                        alt="Proyecto Final" class="timeline-image">
+                    <span class="read-more">Ver más →</span>
+                </div>
+            </div>
+
+            <!-- Experiencia 4 -->
+            <div class="timeline-item" onclick="openModal(4)">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Septiembre 2024</span>
+                    <h3 class="timeline-title">Visita Técnica a Empresa de Software</h3>
+                    <p class="timeline-description">
+                        Visitamos una empresa de desarrollo de software local donde conocimos sus metodologías de
+                        trabajo y el ambiente laboral real de un programador.
+                    </p>
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=400&fit=crop"
+                        alt="Visita Empresa" class="timeline-image">
+                    <span class="read-more">Ver más →</span>
+                </div>
+            </div>
+
+            <!-- Experiencia 5 -->
+            <div class="timeline-item" onclick="openModal(5)">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Noviembre 2024</span>
+                    <h3 class="timeline-title">Certificación en Cloud Computing</h3>
+                    <p class="timeline-description">
+                        Completé exitosamente un curso de certificación en servicios de nube y despliegue de
+                        aplicaciones. Una experiencia enriquecedora para mi carrera.
+                    </p>
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=400&fit=crop"
+                        alt="Cloud Computing" class="timeline-image">
+                    <span class="read-more">Ver más →</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <img id="modal-img" src="" alt="" class="modal-image">
+            <div class="modal-body">
+                <span id="modal-date" class="modal-date"></span>
+                <h2 id="modal-title" class="modal-title"></h2>
+                <p id="modal-description" class="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pie-pagina">
+        <small>&copy;Wilfer Ortíz Duarte. Todos los derechos reservados</small>
+    </footer>
+
+    <script src="../static/js/modalExp.js"></script>
+</body>
+
+</html>

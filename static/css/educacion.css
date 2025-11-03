@@ -1,0 +1,68 @@
+.div-educacion {
+  width: 100%;
+  display: grid;
+  align-items: center; /* Ancho máximo para la sección */
+}
+
+/* --- Título Principal "Educación" --- */
+.div-educacion > h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: var(--spacing-general);
+}
+
+/* --- Contenedor para cada Bloque de Educación --- */
+.educacion {
+  border: 2px solid #0066ff;
+  border-radius: 12px; /* Esquinas redondeadas */
+  padding: 1.5rem; /* Espaciado interno */
+  margin-bottom: 1.5rem; /* Espaciado entre contenedores */
+}
+
+.titulos {
+  box-shadow: var(--shadow-sm);
+  padding: 2em;
+}
+
+/* El último elemento no necesita margen inferior */
+.titulos .educacion:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Contenedor Flex para Título y Fecha --- */
+.titulo-fecha {
+  display: flex;
+  justify-content: space-between; /* Empuja el título a la izq. y la fecha a la der. */
+  align-items: center; /* Alinea verticalmente */
+  margin-bottom: 1rem; /* Espacio antes de la descripción */
+}
+
+/* --- Título de cada programa (Tecnólogo, Bachiller, etc.) --- */
+.educacion h1 {
+  color: #0066ff; /* Mismo color que el borde */
+  font-size: 1.25rem;
+  margin: 0; /* Resetea el margen por defecto del h1 */
+}
+
+/* --- Etiqueta de la Fecha --- */
+.educacion time {
+  background-color: rgba(224, 224, 224, 0.9);
+  color: #12121c; /* Color de texto oscuro */
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* --- Párrafo de Descripción --- */
+.educacion p {
+  margin: 0;
+  line-height: 1.5;
+  color: #4d4b4b;
+}
+
+/* --- Institución (texto en negrita) --- */
+.educacion p strong {
+  color: #e0e0e0; /* Un poco más brillante que la descripción */
+  font-weight: 600;
+}

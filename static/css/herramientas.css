@@ -1,0 +1,76 @@
+.herramientas-sec {
+    width: 100%;
+    margin: 0 auto;   /* Centra la sección en la página */
+    text-align: center;
+}
+
+/* Título principal de la sección. */
+.herramientas-sec>h1 {
+    font-size: 2.5rem;
+    margin: var(--spacing-general);
+}
+
+/* --- Parrilla de Herramientas (Grid) --- */
+/* Contenedor de todas las tarjetas. Se usa Grid para un diseño adaptable. */
+.tools {
+    display: grid;
+    margin: 0.5rem 1rem;
+    /* Crea columnas que se ajustan automáticamente al espacio disponible.
+      Cada columna tendrá un mínimo de 120px y se expandirá para ocupar el espacio sobrante.
+    */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));
+    gap: 1.5em;
+    padding: 5%;
+}
+
+/* --- Tarjeta Individual (.tool) --- */
+/* Estilo para cada una de las tarjetas de herramientas. */
+.tool {
+    padding: 1.5rem 1rem;
+    border: 2px solid var(--border);
+    
+    /* Usamos Flexbox para centrar el contenido verticalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    aspect-ratio: 1 / 1; /* Mantiene la tarjeta cuadrada */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Efecto al pasar el cursor sobre la tarjeta. */
+.tool:hover {
+    transform: translateY(-8px); /* Eleva la tarjeta ligeramente */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Contenido de la Tarjeta --- */
+
+/* Contenedor del ícono (SVG). */
+.icon-tool {
+    margin-bottom: 1rem;
+}
+
+/* Estilos para el SVG dentro del contenedor del ícono. */
+.icon-tool svg {
+    width: 48px;
+    height: 48px;
+    /* El color del SVG se puede definir con 'fill' si el SVG lo permite.
+       Ejemplo: fill: var(--color-texto-principal); */
+}
+
+/* Título de la herramienta (h3). */
+.tool h3 {
+    margin: 0 0 0.25rem 0; /* Espacio mínimo debajo del título */
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-texto-principal);
+}
+
+/* Descripción de la herramienta (small). */
+.tool small {
+    font-size: 0.85rem;
+    color: var(--color-texto-secundario);
+    line-height: 1.4;
+}

@@ -1,0 +1,115 @@
+.contact-section {
+  padding: var(--spacing-2xl);
+}
+
+.contacto {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-2xl);
+}
+
+.contacto> h1 {grid-column: 1 / -1;}
+
+.datos-port {grid-column: 1 / 3;}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background: linear-gradient(120deg, var(--text-primary), var(--text-accent));
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  border-radius: var(--border-radius-lg);
+  margin-bottom: var(--spacing-md);
+  transition: all var(--transition-normal);
+}
+
+.contact-info
+
+.contact-item:hover {
+  transform: translateX(8px);
+  border-color: rgba(100, 255, 218, 0.3);
+}
+
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-accent);
+  border-radius: var(--border-radius-md);
+}
+
+.contact-info p {
+  color: white;
+  font-weight: 500;
+}
+
+.contact-label
+
+.contact-label>small {
+  font-size: 0.9rem;
+  color: white;
+}
+
+.contact-form-container {
+  border: 2px solid var(--border);
+  padding: var(--spacing-general);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  grid-column: 3 / 5;
+}
+
+form {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.form-group {
+  display: grid;
+  gap: var(--spacing-sm);
+}
+
+label {
+  font-weight: 600;
+  color: var(--text-accent);
+}
+
+input,
+textarea {
+  padding: var(--spacing-md);
+  background: var(--secondary-bg);
+  border: 2px solid var(--border);
+  border-radius: var(--border-radius-md);
+  color: var(--text-primary);
+  font-family: inherit;
+  transition: all var(--transition-normal);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(100, 255, 218, 0.1);
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background: linear-gradient(250deg, var(--text-primary, var(--text-accent)));
+  color: white;
+  border: none;
+  padding: var(--spacing-lg);
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
