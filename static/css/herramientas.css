@@ -42,7 +42,7 @@
 /* Efecto al pasar el cursor sobre la tarjeta. */
 .tool:hover {
     transform: translateY(-8px); /* Eleva la tarjeta ligeramente */
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow-xl);
 }
 
 /* --- Contenido de la Tarjeta --- */

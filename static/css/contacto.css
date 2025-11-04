@@ -1,6 +1,4 @@
-.contact-section {
-  padding: var(--spacing-2xl);
-}
+.contact-section {padding: var(--spacing-2xl);}
 
 .contacto {
   display: grid;
@@ -10,7 +8,11 @@
 
 .contacto> h1 {grid-column: 1 / -1;}
 
-.datos-port {grid-column: 1 / 3;}
+.datos-port {
+  display: grid;
+  row-gap: var(--spacing-sm);
+  grid-column: 1 / 3;
+}
 
 .contact-item {
   display: flex;
@@ -18,13 +20,10 @@
   gap: var(--spacing-md);
   padding: var(--spacing-lg);
   background: linear-gradient(120deg, var(--text-primary), var(--text-accent));
-  border: 1px solid rgba(100, 255, 218, 0.1);
   border-radius: var(--border-radius-lg);
   margin-bottom: var(--spacing-md);
   transition: all var(--transition-normal);
 }
-
-.contact-info
 
 .contact-item:hover {
   transform: translateX(8px);

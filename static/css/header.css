@@ -34,6 +34,6 @@
 }
 
 .seccion:hover {
-    color: rgb(160, 95, 233);
+    color: var(--text-primary);
     transform: scale(1.07);
 }

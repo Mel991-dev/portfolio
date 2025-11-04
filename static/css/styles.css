@@ -70,7 +70,7 @@ hr {
 
 .btn-theme {
   width: auto;
-  background-color: white;
+  background-color: var(--surface);
   padding: var(--spacing-sm);
   border-radius: var(--border-radius-full);
   position: fixed;
