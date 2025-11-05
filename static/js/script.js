@@ -53,11 +53,11 @@ function applyTheme(theme) {
         root.style.setProperty('--text-primary', '#0066ff');
         root.style.setProperty('--text-secondary', '#3d3d3d');
         root.style.setProperty('--text-accent', '#06b6d4');
-        root.style.setProperty('--background', '#fafafa');
+        root.style.setProperty('--background', '#ebebebff');
         root.style.setProperty('--surface', '#ffffff');
         root.style.setProperty('--text', '#0f172a');
         root.style.setProperty('--text-muted', '#64748b');
-        root.style.setProperty('--border', '#e2e8f0');
+        root.style.setProperty('--border', '#d1d7dfff');
         
         // Sombras para tema claro
         root.style.setProperty('--shadow-sm', '0 1px 2px rgba(15, 23, 42, 0.08)');

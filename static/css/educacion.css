@@ -13,10 +13,17 @@
 
 /* --- Contenedor para cada Bloque de Educación --- */
 .educacion {
-  border: 2px solid var(--text-primary);
+  border: 2px solid var(--border);
   border-radius: 12px; /* Esquinas redondeadas */
   padding: 1.5rem; /* Espaciado interno */
   margin-bottom: 1.5rem; /* Espaciado entre contenedores */
+}
+
+.educacion:hover {
+  border: 2px solid var(--text-primary);
+  transition: var(--transition-slow);
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-5px);
 }
 
 .titulos {
@@ -54,9 +61,11 @@
   font-weight: 500;
 }
 
+.reducir {max-width: 150px;}
+
 /* --- Párrafo de Descripción --- */
 .educacion p {
-  margin: 0;
+  margin-bottom: var(--spacing-md);
   line-height: 1.5;
   color: var(--text-secondary);
 }
