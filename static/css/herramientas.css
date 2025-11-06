@@ -62,7 +62,7 @@
 
 /* Título de la herramienta (h3). */
 .tool h3 {
-    margin: 0 0 0.25rem 0; /* Espacio mínimo debajo del título */
+    margin: var(--spacing-xs); /* Espacio mínimo debajo del título */
     font-size: 1rem;
     font-weight: 600;
     color: var(--color-texto-principal);
@@ -71,6 +71,5 @@
 /* Descripción de la herramienta (small). */
 .tool small {
     font-size: 0.85rem;
-    color: var(--color-texto-secundario);
     line-height: 1.4;
 }

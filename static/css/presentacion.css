@@ -32,14 +32,13 @@
 }
 
 .presentacion h1, h2 {color: var(--text-primary);}
-
-
 .end>h2 {font-size: 30px;}
 
 .div-presentacion {
     display: grid;
     padding: 20px 30px;
     gap: 15px;
+    /*dividir en 5 columnas*/
     grid-template-columns: repeat(5, 1fr);
     margin-top: 50px;
 }
@@ -55,8 +54,9 @@
     display: grid;
     justify-content: space-between;
     align-items: start;
+    /*el texto de presentación ocupará gran parte de las cuadriculas*/
     grid-column: 1 / 5;
-    padding: 2em;
+    padding: var(--spacing-general);
 }
 
 .datos-pre {
@@ -68,9 +68,10 @@
 .datos-pre>p {font-size: 1.5rem;}
 
 .imagen-port {
+    
     grid-column: 5 / 6;
     max-width: 350px;
-    border-radius: 50%;
+    border-radius: var(--border-radius-full);
     box-shadow: var(--shadow-xl);
 }
 

@@ -1,80 +1,72 @@
 const experiencias = {
   1: {
-    date: "Marzo 2024",
-    title: "Hackathon de Desarrollo Web",
+    date: "15 octubre 2025",
+    title: "Prueba de resistencia física",
     description:
-      "Participé en mi primer hackathon donde desarrollamos una aplicación web completa en solo 24 horas. Fue una experiencia increíble trabajar en equipo bajo presión y contra el reloj. Nuestro proyecto consistió en una plataforma de gestión de tareas colaborativas con funciones en tiempo real. Utilizamos tecnologías como React, Node.js, Socket.io y MongoDB. Aunque no ganamos el primer lugar, aprendimos muchísimo sobre trabajo en equipo, gestión del tiempo y toma de decisiones rápidas. Esta experiencia me enseñó que la programación va más allá del código: es sobre resolver problemas reales y trabajar eficientemente con otros desarrolladores. Sin duda, una de las experiencias más enriquecedoras de mi formación.",
-    image:
-      "/media/img/experiencias/15octubre.jpeg",
+    "En esta prueba se nos dio bastante bién a la mayoria, cuando recorrimos 10km dando vueltas a la pista. Siendo unas 20 en total, también hicimos test de nuestra velocidad maxima llegando hasta cierto punto. En resumen, la pasamos bien realizando todos estos ejercicios con nuestro instructor Jose Jaiber.",
+    image: 
+    "/media/img/experiencias/15octubre.jpeg",
   },
   2: {
-    date: "Mayo 2024",
-    title: "Taller de Inteligencia Artificial",
+    date: "10 octubre 2025",
+    title: "Foto casual de nuestro querido SENA",
     description:
-      "Asistimos a un taller intensivo de tres días sobre Machine Learning y sus aplicaciones prácticas en el desarrollo de software moderno. Durante el taller, aprendimos sobre redes neuronales, procesamiento de lenguaje natural y visión por computadora. Realizamos varios proyectos prácticos, incluyendo un clasificador de imágenes y un chatbot básico. Los instructores eran profesionales de la industria con años de experiencia en IA. Lo más interesante fue ver cómo la inteligencia artificial está transformando todas las áreas del desarrollo de software y cómo podemos integrarla en nuestros propios proyectos. Esta experiencia abrió mi mente a las posibilidades futuras de la tecnología y me motivó a profundizar más en este campo fascinante.",
-    image:
-      "/media/img/experiencias/10octubre.jpeg",
+      "Nos reunimos como grupo despues del cierre por paro nacional y nos fuimos a nuestros hogares. Foto tomada por nuestro instructor Oscar Castro Mopán.",
+    image: "/media/img/experiencias/10octubre.jpeg",
   },
   3: {
-    date: "Julio 2024",
-    title: "Proyecto Final de Módulo",
+    date: "21 agosto 2025",
+    title: "Haciendo flores decorativas para evento",
     description:
-      "La presentación del proyecto final del módulo de desarrollo backend fue uno de los momentos más importantes de mi formación. Después de semanas de trabajo, presentamos una API REST completa con autenticación JWT, autorización por roles, y una arquitectura bien estructurada siguiendo el patrón MVC. Implementamos operaciones CRUD completas, validación de datos, manejo de errores robusto y documentación con Swagger. La base de datos fue diseñada cuidadosamente con MySQL, incluyendo relaciones complejas y optimizaciones de consultas. Durante la presentación, demostramos todas las funcionalidades usando Postman y respondimos preguntas técnicas del jurado. Recibimos excelentes comentarios sobre la calidad del código, la documentación y la implementación de buenas prácticas. Este proyecto consolidó todo lo aprendido durante el módulo y me dio confianza en mis habilidades como desarrollador backend.",
-    image:
-      "/media/img/experiencias/21agostoo.jpeg",
+      "Estuvimos haciendo entre todos flores de papeles de colores utilizando tecnicas de origami mientras que otros compañeros se encargaban de hacer el arte ilustrativo como carteleras, logotipos, diseños, etc.",
+    image: "/media/img/experiencias/21agostoo.jpeg",
   },
   4: {
-    date: "Septiembre 2024",
-    title: "Visita Técnica a Empresa de Software",
+    date: "21 agosto 2025",
+    title: "Posando para la foto después de tanto trabajo",
     description:
-      "La visita a la empresa de desarrollo de software fue una experiencia reveladora que nos mostró el mundo real de la programación profesional. Recorrimos sus instalaciones modernas, conocimos sus áreas de desarrollo, testing, y reuniones de equipo. Nos explicaron cómo trabajan con metodologías ágiles como Scrum, sus ceremonias diarias, sprints y retrospectivas. Vimos en acción sus herramientas de colaboración como Jira, Confluence y GitLab. Lo más valioso fue conversar con desarrolladores de diferentes niveles de experiencia que compartieron sus historias, desafíos y consejos para quienes estamos iniciando en la industria. Nos hablaron sobre la importancia del aprendizaje continuo, la comunicación efectiva y el trabajo en equipo. También nos mostraron algunos de sus proyectos más interesantes y cómo resolvieron problemas técnicos complejos. Esta visita me ayudó a entender mejor qué esperar de mi carrera profesional y qué habilidades debo desarrollar para tener éxito en la industria del software.",
-    image:
-      "/media/img/experiencias/21agosto.jpeg",
+      "Foto para el recuerdo de aquellos dias en el que trabajamos como un equipo para poder ofrecer lo mejor posible a la institución a la que pertenecemos. En esta fotografía mostramos nuestro amor y dedicación por el tecnologo y todo lo que el SENA representa.",
+    image: "/media/img/experiencias/21agosto.jpeg",
   },
   5: {
     date: "Noviembre 2024",
     title: "Certificación en Cloud Computing",
     description:
       "Completar la certificación en Cloud Computing fue un hito importante en mi desarrollo profesional. El curso abarcó conceptos fundamentales de servicios en la nube, arquitecturas cloud-native, contenedorización con Docker, orquestación con Kubernetes, y despliegue continuo. Aprendimos a trabajar con servicios de AWS, incluyendo EC2, S3, RDS, Lambda y muchos más. Realizamos proyectos prácticos donde desplegamos aplicaciones completas en la nube, configuramos balanceadores de carga, implementamos auto-escalado y monitoreamos el rendimiento de nuestras aplicaciones. La parte más desafiante pero gratificante fue el proyecto final: diseñar y desplegar una arquitectura de microservicios escalable y resiliente. Durante el proceso, aprendí sobre infraestructura como código con Terraform, pipelines CI/CD con GitHub Actions, y mejores prácticas de seguridad en la nube. Obtener esta certificación no solo amplió mis conocimientos técnicos, sino que también me preparó para las demandas actuales del mercado laboral donde el cloud computing es esencial.",
-    image:
-      "/media/img/experiencias/12julio.jpeg",
+    image: "/media/img/experiencias/12julio.jpeg",
   },
 
   5: {
     date: "21 agosto 2025",
     title: "Siendo premiados por ganar el torneo",
-    description:
-    "",
-    image:
-    "/media/img/experiencias/12julio.jpeg"
+    description: 
+    "Al dia siguiente de haber ganado el torneo de Voleibol, fuimos recompensados con unos termos de calidad innegable y una toallita personal dentro de este. Para incentivarnos a ser competitivos y siempre buscar ganar.",
+    image: "/media/img/experiencias/12julio.jpeg",
   },
 
   6: {
     date: "11 julio 2024",
     title: "Final del torneo de Voleiból",
-    description:
-    "",
-    image:
-    "/media/img/experiencias/11julio.jpeg"
+    description: 
+    "Durante la final del torneo, estuvimos muy parejos contra el equipo rival, la formación de Gestión Empresarial, pero al final logramos ganarles, y como recompensa en ese momento nos reunieron y nos dieron a cada uno unos trofeos transparentes con soporte de madera representando haber jugado limpio y respetar las reglas del juego.",
+    image: "/media/img/experiencias/11julio.jpeg",
   },
 
-    7: {
+  7: {
     date: "11 junio 2025",
     title: "Evaluación frontend a la antigua",
-    description:
-    "",
-    image:
-    "/media/img/experiencias/11junio.jpeg"
+    description: 
+    "Nuestro instructor Oscar Yanguas organizó una evaluación acerca de nuestros conocimientos en el Frontend. Utilizando marcadores solamente escribiamos el HTML y CSS para representar el mockup que teniamos en el tablero, luego con la ayuda de otro compañero, copiabamos el código tal cual en el tablero y ver si el maquetado coincide. Fue una buena forma de reafirmar conocimientos y demostró que la metodología de nuestro Instructor funciona.",
+    image: "/media/img/experiencias/11junio.jpeg",
   },
 
-    8: {
+  8: {
     date: "11 abril 2025",
     title: "Celebrando los cumpleaños de nuestros compañeros",
-    description:
-    "",
-    image:
-    "/media/img/experiencias/11abril.jpeg"
-  }
+    description: 
+    "Por cada 3 meses acordamos que debiamos celebrarle su cumpleaños a los que vayan a cumplir años dentro de esos 3 meses. Ahí fue cuando organizamos un compartir para nuestros compañeros: Luraine, Micke, Jhorman y Cristian.",
+    image: "/media/img/experiencias/11abril.jpeg",
+  },
 };
 
 function openModal(id) {

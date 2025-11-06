@@ -1,15 +1,12 @@
-@import url(globals.css);
-
 .cabecera {
-    max-width: 100%;
     align-items: center;
     justify-content: space-between;
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
-    padding: 5px 15px;
-    min-height: 100px;
+    padding: var(--spacing-general);
+    min-height: 100px; /*altura establecida*/
     background-color: var(--background);
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-xl);
 }
 
 .cabecera>h1 {color: var(--text-primary);}
@@ -29,11 +26,11 @@
 
 .seccion {
     text-decoration: none;
-    font-size: 1rem;
-    transition: all ease-out;
+    transition: var(--transition-fast);
 }
 
 .seccion:hover {
     color: var(--text-primary);
     transform: scale(1.07);
+    /*Aumentar su tamaño al pasar el cursor*/
 }

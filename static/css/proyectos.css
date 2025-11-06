@@ -1,10 +1,9 @@
 /* Seccion de proyecto */
-.projects-section {
-  padding: var(--spacing-2xl);
-}
+.projects-section {padding: var(--spacing-2xl);}
 
 .projects-grid {
   display: grid;
+  /*el tamaño se mantiene al minimo y maximo de 350 */
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: var(--spacing-2xl);
 }
@@ -33,9 +32,7 @@
   transition: transform var(--transition-normal);
 }
 
-.proyecto:hover .port-img {
-  transform: scale(1.05);
-}
+.proyecto:hover .port-img {transform: scale(1.05);}
 
 .proyecto h2 {
   font-size: 1.5rem;
@@ -61,7 +58,6 @@
   text-align: center;
   font-weight: 600;
   transition: all var(--transition-normal);
-  border: 2px solid rgba(100, 255, 218, 0.2);
   color: var(--text-secondary);
 }
 
@@ -71,13 +67,8 @@
   border: none;
 }
 
-.btn.secondary {
-  border: 2px solid var(--text-primary);
-}
-
-.btn:hover {
-  transform: translateY(-4px);
-}
+.btn.secondary {border: 2px solid var(--text-primary);}
+.btn:hover {transform: translateY(-4px);}
 
 .secondary:hover {
   background-color: var(--text-accent);

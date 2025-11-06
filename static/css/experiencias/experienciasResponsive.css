@@ -1,0 +1,276 @@
+/* ============================================
+   EXPERIENCIAS RESPONSIVE
+   ============================================ */
+
+/* ============================================
+   MOBILE - (320px - 767px)
+   ============================================ */
+@media (max-width: 767px) {
+  /* Container */
+  .container {
+    max-width: 100%;
+    padding: var(--spacing-lg);
+  }
+
+  /* Header Section */
+  .mis-experiencias {
+    margin-top: 120px;
+    padding: var(--spacing-lg);
+  }
+
+  .mis-experiencias h1 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  .mis-experiencias p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  /* Timeline */
+  .timeline {
+    padding: var(--spacing-lg) 0;
+  }
+
+  /* Línea vertical a la izquierda */
+  .timeline::before {
+    left: 20px;
+  }
+
+  /* Timeline Items */
+  .timeline-item {
+    flex-direction: row !important;
+    padding-left: 50px;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  /* Dot posicionado a la izquierda */
+  .timeline-dot {
+    left: 20px;
+    width: 16px;
+    height: 16px;
+    border-width: 3px;
+  }
+
+  /* Content siempre a la derecha */
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+
+  .timeline-content {
+    padding: var(--spacing-lg);
+  }
+
+  .timeline-date {
+    font-size: 0.8rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+
+  .timeline-title {
+    font-size: 1.2rem;
+  }
+
+  .timeline-description {
+    font-size: 0.95rem;
+  }
+
+  .timeline-image {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /* Modal */
+  .modal {
+    padding: var(--spacing-md);
+  }
+
+  .modal-content {
+    max-height: 85vh;
+    margin: var(--spacing-md);
+  }
+
+  .modal-image {
+    height: 200px;
+  }
+
+  .modal-body {
+    padding: var(--spacing-lg);
+  }
+
+  .modal-date {
+    font-size: 0.8rem;
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .modal-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+/* ============================================
+   MOBILE SMALL - (max-width: 480px)
+   ============================================ */
+@media (max-width: 480px) {
+  .timeline-item {
+    padding-left: 40px;
+  }
+
+  .timeline::before {
+    left: 15px;
+  }
+
+  .timeline-dot {
+    left: 15px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .timeline-content {
+    padding: var(--spacing-md);
+  }
+
+  .timeline-title {
+    font-size: 1.1rem;
+  }
+
+  .timeline-image {
+    height: 180px;
+  }
+
+  .read-more {
+    font-size: 0.9rem;
+  }
+}
+
+/* ============================================
+   TABLET - (768px - 1024px)
+   ============================================ */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    max-width: 95%;
+  }
+
+  .mis-experiencias h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Timeline más compacto en tablet */
+  .timeline::before {
+    left: 50%;
+  }
+
+  .timeline-item {
+    padding-left: 0;
+  }
+
+  .timeline-content {
+    width: calc(50% - var(--spacing-xl));
+  }
+
+  .timeline-dot {
+    left: 50%;
+  }
+
+  /* Alternar lados en tablet */
+  .timeline-item:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content {
+    margin-left: auto;
+    margin-right: var(--spacing-lg);
+    text-align: right;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content {
+    margin-right: auto;
+    margin-left: var(--spacing-lg);
+    text-align: left;
+  }
+
+  .modal-content {
+    max-width: 700px;
+  }
+
+  .modal-image {
+    height: 280px;
+  }
+}
+
+/* ============================================
+   DESKTOP SMALL - (1025px - 1280px)
+   ============================================ */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    max-width: 1100px;
+  }
+
+  .timeline-content {
+    width: calc(50% - var(--spacing-2xl));
+    padding: var(--spacing-xl);
+  }
+}
+
+/* ============================================
+   LANDSCAPE MODE
+   ============================================ */
+@media (max-width: 767px) and (orientation: landscape) {
+  .mis-experiencias {
+    margin-top: 100px;
+  }
+
+  .timeline-image {
+    height: 150px;
+  }
+
+  .modal-image {
+    height: 180px;
+  }
+}
+
+/* ============================================
+   OPTIMIZACIONES ESPECÍFICAS
+   ============================================ */
+
+/* Touch targets mínimos de 44x44px (iOS guidelines) */
+@media (max-width: 767px) {
+  .timeline-item {
+    cursor: pointer;
+    min-height: 44px;
+  }
+
+  .read-more {
+    padding: var(--spacing-sm);
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+/* Mejorar rendimiento en dispositivos móviles */
+@media (max-width: 767px) {
+  .timeline-image,
+  .modal-image {
+    will-change: transform;
+    transform: translateZ(0);
+  }
+
+  .timeline-content {
+    will-change: transform;
+  }
+}
+
+/* Optimización para pantallas OLED */
+@media (max-width: 767px) and (prefers-color-scheme: dark) {
+  .modal {
+    background: rgba(0, 0, 0, 0.95);
+  }
+}

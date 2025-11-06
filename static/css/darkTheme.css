@@ -1,14 +1,20 @@
-/*darkTheme.css*/
-.root {
-  --primary-dark: #3b82f6;
-  --text-secondary: rgb(248, 243, 243);
-  --text-accent: #22d3ee;
-  --background: #0a0a0a;
-  --surface: #171717;
-  --text: #f8fafc;
-  --text-muted: #94a3b8;
-  --border: #2d3748;
+:root {
+  /* Paleta de Colores oscura - Este archivo solo sirve para mostrar la paleta completa */
+  --text-primary: #22c55e; /* Verde neón/brillante que resalta en oscuro */
+  --text-secondary: rgb(248, 243, 243); /* Mantenido de tu original */
+  --text-accent: #10b981; /* Un verde secundario */
+  --background: #111827; /* Azul/Gris muy oscuro (más pro que negro puro) */
+  --surface: #1f2937; /* Superficie (tarjetas) ligeramente más clara */
+  --text: #e5e7eb; /* Texto principal (blanco suave) */
+  --text-muted: #9ca3af; /* Texto secundario (gris claro) */
+  --border: #374151; /* Borde oscuro */
 
+  /* Colores Semánticos (Estándar) */
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+
+  /* --- Variables Estructurales (Sin cambios) --- */
   /* Sombras adaptadas para tema oscuro */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.5);

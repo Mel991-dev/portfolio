@@ -1,247 +1,342 @@
-/* Estilos base que se aplican a todos los tamaños móviles */
+/* ============================================
+   RESPONSIVE DESIGN - MOBILE FIRST APPROACH
+   ============================================ */
+
+/* ============================================
+   MENÚ HAMBURGUESA
+   ============================================ */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 10000;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: var(--text-primary);
+  border-radius: 3px;
+  transition: all var(--transition-normal);
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* ============================================
+   MOBILE - BASE (320px - 767px)
+   ============================================ */
 @media (max-width: 767px) {
-  .div-portfolio { width: 100%; }
-  .seccion { font-size: 15px; }
-  .presentacion { padding: 4px 7px; }
-  .presentacion > h1 { font-size: 25px; }
-  .presentacion > span { font-size: 32px; }
-  .presentacion > h2 { font-size: 20px; }
-  #portfolio-tit { font-size: 32px; }
-  
-  .div-presentacion {
-    grid-template-columns: 1fr;
-    place-items: center;
-    gap: 20px;
+  /* Header */
+  .cabecera {
+    grid-template-columns: 1fr auto;
+    padding: var(--spacing-md) var(--spacing-lg);
+    gap: 0;
   }
-  
-  .sobre-mi {
-    grid-column: 1 / -1;
-    place-items: center;
-    gap: 25px;
-    padding: 10px 20px;
-    text-align: center;
-  }
-  
-  .imagen-port {
-    grid-column: 1 / -1;
-    width: 300px;
-    height: 300px;
-    object-fit: contain;
-  }
-  
-  .habilidades { 
-    grid-template-columns: 1fr;
-    padding: 10px 25px;
-  }
-  
-  .habilidad {
-    gap: 25px;
-    height: auto;
-    min-height: auto;
-  }
-  
-  .img-hab {
-    width: 100%;
-    min-height: 100px;
-    max-height: none;
-  }
-  
-  .proyectos {
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-    gap: 30px;
-    padding: 20px;
-  }
-  
-  .proyectos > h1 {
-    font-size: 32px;
-    text-align: center;
-  }
-  
-  .proyecto {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .contacto {
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-    gap: 30px;
-    padding: 20px;
-  }
-  
-  .datos-port {
-    display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
-    gap: 20px;
-    text-align: center;
-  }
-  
-  .datos-port > h1 { font-size: 32px; }
-  
-  .correo {
+
+  .menu-toggle {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
   }
-  
-  .correo > p { font-size: 16px; }
-  .copyright { font-size: 12px; }
-  
-  form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-    width: 100%;
-    padding: 20px;
-  }
-  
-  form > label {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  form > input,
-  form > textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.37);
-    border-radius: 4px;
-    font-size: 14px;
-  }
-  
-  form > input[type="submit"] {
-    padding: 12px;
-    font-size: 16px;
-  }
-  
-  .pie-pagina { width: 100%; }
-}
 
-/* Tabletas */
-@media (min-width: 481px) and (max-width: 767px) {
-  body { min-width: 800px; }
-  
-  .cabecera {
-    display: grid;
-    grid-template-columns: 180px auto;
-  }
-  
-  .cabecera > h1 { font-size: 25px; }
-  
   .secciones {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
-  
-  .div-presentacion { padding: 20px; }
-  
-  .datos-pre {
-    gap: 15px;
-    padding: 25px;
-    text-align: center;
-  }
-  
-  .redes {
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .habilidades {
-    display: grid;
-    place-items: center;
-  }
-  
-  .habilidades > h1 { font-size: 35px; }
-  
-  .habilidad {
-    padding: 25px;
-    text-align: center;
-    width: 100%;
-    max-height: none;
-  }
-  
-  .habilidad > p { font-size: 20px; }
-  .subtitulo { font-size: 1.5rem; }
-  
-  .port-img {
-    width: 500px;
+    position: fixed;
+    top: 20px;
+    left: -320px;
+    width: 280px;
     height: auto;
+    max-height: calc(100vh - 40px);
+    background: var(--surface);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: var(--spacing-2xl) var(--spacing-xl);
+    box-shadow: var(--shadow-xl);
+    transition: left var(--transition-normal);
+    z-index: 9998;
+    border-radius: 0 var(--border-radius-xl) var(--border-radius-xl) 0;
+    overflow-y: auto;
+    border: 2px solid var(--border);
+    border-left: none;
   }
-  
-  .proyecto {
-    max-width: 480px;
-  }
-  
-  .proyecto > p { font-size: 20px; }
-  
-  .datos-port {
-    min-width: 480px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  form { width: 450px; }
-  
-  input,
-  textarea {
-    width: 300px;
-  }
-  
-  #dev { width: 400px; }
-}
 
-/* Móviles */
-@media (max-width: 480px) {
-  body { min-width: 800px; }
-  
-  .cabecera {
-    grid-template-columns: 1fr;
-    text-align: center;
+  .secciones.active {
+    left: 0;
+    top: 0;
   }
-  
-  .secciones { display: none; }
-  
-  .icon-lenguajes {
-    height: auto;
+
+  .seccion {
+    width: 100%;
+    padding: var(--spacing-lg) var(--spacing-md);
+    font-size: 1.1rem;
+    border-bottom: 1px solid var(--border);
+    transition: all var(--transition-fast);
+    border-radius: var(--border-radius-md);
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .seccion:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .seccion:hover {
+    background: var(--background);
+    padding-left: var(--spacing-lg);
+  }
+
+  /* Overlay */
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-normal);
+    z-index: 9997;
+  }
+
+  .menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Presentación */
+  .presentacion > h1 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+
+  .presentacion > h2,
+  #portfolio-tit {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .altura-container {
+    height: 30vh;
     min-height: 200px;
   }
-  
-  .proyecto {
-    max-width: 480px;
+
+  /* Sobre mi */
+  .div-presentacion {
+    grid-template-columns: 1fr;
+    padding: var(--spacing-lg);
+    margin-top: 120px;
   }
-  
-  .proyecto > h2 { font-size: 24px; }
-  .proyecto > p { font-size: 18px; }
-  
-  .port-img {
-    max-width: 400px;
-    height: auto;
+
+  .sobre-mi {
+    grid-column: 1 / -1;
+    padding: var(--spacing-lg);
+    text-align: center;
   }
-  
-  #dev {
-    width: 300px;
+
+  .datos-pre > h1 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  .datos-pre > p {
+    font-size: clamp(1rem, 4vw, 1.2rem);
+  }
+
+  .curriculum {
     max-width: 100%;
   }
-  
-  form { max-width: 400px; }
+
+  .imagen-port {
+    grid-column: 1 / -1;
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* Educación */
+  .div-educacion > h1 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+
+  .titulos {
+    padding: var(--spacing-lg);
+  }
+
+  .titulo-fecha {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+
+  /* Herramientas */
+  .tools {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+  }
+
+  /* Proyectos */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .project-image-container {
+    height: 180px;
+  }
+
+  /* Contacto */
+  .contacto {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .contacto > h1 {
+    grid-column: 1 / -1;
+  }
+
+  .datos-port {
+    grid-column: 1 / -1;
+  }
+
+  .contact-form-container {
+    grid-column: 1 / -1;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  form {
+    gap: var(--spacing-md);
+  }
+
+  input,
+  textarea {
+    font-size: 16px; /* Previene zoom en iOS */
+  }
 }
 
-/* Tabletas grandes */
+/* ============================================
+   TABLET - (768px - 1024px)
+   ============================================ */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .cabecera { grid-template-columns: 250px auto; }
-  .seccion { font-size: 18px; }
-  .presentacion > h1 { font-size: 35px; }
-  .presentacion > span { font-size: 45px; }
-  body { min-width: 800px; }
-  .habilidad { min-height: auto; }
+  /* Header */
+  .cabecera {
+    grid-template-columns: 200px 1fr;
+  }
+
+  .secciones {
+    gap: var(--spacing-sm);
+  }
+
+  .seccion {
+    font-size: 0.95rem;
+  }
+
+  /* Presentación */
+  .presentacion > h1 {
+    font-size: 2rem;
+  }
+
+  .presentacion > h2 {
+    font-size: 3.5rem;
+  }
+
+  /* Sobre mi */
+  .div-presentacion {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xl);
+  }
+
+  .sobre-mi {grid-column: 1 / -1;}
+
+  .imagen-port {
+    grid-column: 2 / 3;
+    max-width: 280px;
+  }
+
+  /* Herramientas */
+  .tools {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  /* Proyectos */
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  /* Contacto */
+  .contacto {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .datos-port {
+    grid-column: 1 / -1;
+  }
+
+  .contact-form-container {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ============================================
+   DESKTOP SMALL - (1025px - 1280px)
+   ============================================ */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .contacto {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .datos-port {
+    grid-column: 1 / 2;
+  }
+
+  .contact-form-container {
+    grid-column: 2 / -1;
+  }
+}
+
+/* ============================================
+   UTILIDADES
+   ============================================ */
+
+/* Prevenir scroll cuando el menú está abierto */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Mejoras de accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Optimización para pantallas de alta densidad */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .port-img,
+  .imagen-port,
+  .timeline-image {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
 }

@@ -64,11 +64,10 @@ hr {
   border-radius: 2px; 
 }
 
-.altura-container {
-  height: 28vh;
-}
+.altura-container {height: 28vh;}
 
 .btn-theme {
+  /*botón visible en todo momento y ubicado en la parte inferior de la pantalla*/
   width: auto;
   background-color: var(--surface);
   padding: var(--spacing-sm);

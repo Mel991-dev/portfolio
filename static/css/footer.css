@@ -1,12 +1,10 @@
 .pie-pagina {
-    min-width: 100%;
+    max-width: 100%;
     border-top: 2px solid var(--border);
-    display: grid;
-    margin-top: 25px;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 70px;
-    background-color: var(--background);
 }
 
 .pie-pagina>small {

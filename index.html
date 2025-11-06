@@ -14,25 +14,30 @@
     <link rel="stylesheet" href="static/css/responsive.css">
     <link rel="stylesheet" href="static/css/educacion.css">
     <link rel="stylesheet" href="static/css/herramientas.css">
-    <link type="image/png" sizes="32x32" rel="icon" href="img/ico/icons8-development-32.png">
+    <link rel="stylesheet" href="static/css/darkTheme.css">
+    <link rel="stylesheet" href="static/css/globals.css">
+    <link type="image/png" sizes="32x32" rel="icon" href="media/img/ico/icon.png">
 </head>
 
 <body>
     <header class="cabecera fijar">
         <h1 class="titulo">Wilfer Ortíz</h1>
+        <!-- El botón hamburguesa se insertará aquí automáticamente -->
         <nav class="secciones">
             <a href="#sobre-mi" class="seccion">Inicio</a>
-            <a href="#educacion" class="seccion">Educacion</a>
+            <a href="#educacion" class="seccion">Educación</a>
             <a href="/template/experiencias.html" class="seccion">Experiencias</a>
             <a href="#herramientas" class="seccion">Herramientas</a>
             <a href="#proyectos" class="seccion">Proyectos</a>
             <a href="#contacto" class="seccion">Contacto</a>
         </nav>
-
     </header>
 
+    <!--Contenido del portafolio-->
     <main class="div-portfolio">
+        <!--Fondo estatico del portafolio-->
         <div class="paradise-fondo">
+            <!--Fondo que aclara/oscurece el fondo original-->
             <div class="oscurecer">
                 <div class="presentacion altura-container">
                     <h1>Hola, Me llamo</h1>
@@ -49,6 +54,7 @@
         <section id="sobre-mi" class="div-presentacion">
             <div class="sobre-mi borde">
 
+                <!--Ligera descripción mia-->
                 <div class="datos-pre">
                     <h1>Sobre mi</h1>
                     <p>
@@ -59,8 +65,10 @@
                         pequeños proyectos personales
                     </p>
                 </div>
+                <!--Sección para ver mi curriculum-->
                 <div class="curriculum">
                     <h3>Mi curriculum Vitae</h3>
+                    <!--Abrir en otra pestaña mi curriculum o descargarlo-->
                     <div class="actions">
                         <a href="/media/pdf/curriculum.pdf" download="curriculum.pdf" class="btn primary">Descargar</a>
                         <a href="/media/pdf/curriculum.pdf" target="_blank" class="btn secondary">Ver Curriculum</a>
@@ -68,11 +76,16 @@
                 </div>
 
             </div>
+            <!--Foto redonda mia con sombreado-->
             <img class="imagen-port" src="media/img/foto-port.png" alt="imagen de developer">
         </section>
+        
         <hr>
+
+        <!--Sección de certificados de educación-->
         <section id="educacion" class="div-educacion">
             <h1>Formación y Educación</h1>
+            <!--Contenedor principal de mis titulos-->
             <div class="titulos">
                 <div class="educacion">
                     <div class="titulo-fecha">
@@ -94,7 +107,9 @@
                     </p>
 
                     <div class="actions">
-                        <a href="/media/pdf/certificadoCurso.pdf" target="_blank" class="btn secondary reducir">Ver certificado</a>
+                        <!--Abrir para visualizar en otra pestaña el certificado-->
+                        <a href="/media/pdf/certificadoCurso.pdf" target="_blank" class="btn secondary reducir">Ver
+                            certificado</a>
                     </div>
                 </div>
                 <div class="educacion">
@@ -105,14 +120,19 @@
                     <p>Bachiller academico con enfasis en Metodologías de Investigación</p>
 
                     <div class="actions">
-                        <a href="/media/pdf/Acta_de_grado.pdf" target="_blank" class="btn secondary reducir">Ver Diploma</a>
+                        <a href="/media/pdf/Acta_de_grado.pdf" target="_blank" class="btn secondary reducir">Ver
+                            Diploma</a>
                     </div>
                 </div>
             </div>
         </section>
+
         <hr>
+
+        <!--Herramientas que manejo-->
         <section id="herramientas" class="herramientas-sec">
             <h1>Herramientas y Tecnologías</h1>
+            <!--Contenedor general de herramientas-->
             <div class="tools">
                 <div class="tool">
                     <div class="icon-tool">
@@ -537,6 +557,7 @@
     </footer>
 
     <script src="static/js/script.js"></script>
+    <script src="static/js/modalHamburguesa.js"></script>
 </body>
 
 </html>

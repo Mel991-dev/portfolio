@@ -7,6 +7,7 @@
 }
 
 .contacto> h1 {grid-column: 1 / -1;}
+/*El titulo ocupará toda la columna y dejará el retso para los otros contenidos*/
 
 .datos-port {
   display: grid;
@@ -27,7 +28,7 @@
 
 .contact-item:hover {
   transform: translateX(8px);
-  border-color: rgba(100, 255, 218, 0.3);
+  /*mover horizontalmente al pasar el cursor*/
 }
 
 .contact-icon {
